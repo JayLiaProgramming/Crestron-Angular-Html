@@ -1,0 +1,36 @@
+.gauge-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+.gauge-container.vertical {
+  width: 50px;
+  height: 200px;
+}
+
+.gauge-container.horizontal {
+  width: 200px;
+  height: 50px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.gauge-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: height 0.5s ease, width 0.5s ease;
+}
+
+.gauge-container.horizontal .gauge-fill {
+  height: 100%;
+  width: 0;
+  bottom: auto;
+  top: 0;
+}

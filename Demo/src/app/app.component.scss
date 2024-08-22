@@ -1,0 +1,34 @@
+.demo {
+  width: 100%;
+  height: 100%;
+  background-color: #d0e3cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .demo-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .button-container {
+      height: 50px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .demo-ramp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+}

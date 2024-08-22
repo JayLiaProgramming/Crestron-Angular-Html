@@ -1,0 +1,7 @@
+<button class="standard-button"
+  [ngClass]="{'active': communicationService.bool[feedbackJoin]}"
+  (pointerdown)="communicationService.setBool(pressJoin)"
+  (pointerup)="communicationService.releaseBool(pressJoin)"
+  (pointercancel)="communicationService.releaseBool(pressJoin)">
+  <ng-content></ng-content>
+</button>

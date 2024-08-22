@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Arial; //, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+*:not(input) {
+  user-select: none;
+}
+
+.standard-button {
+  border-image: url('./buttons/standard-common-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+  padding: 7px 7px 8px 6px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    border-image: url('./buttons/standard-common-down.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+  }
+
+  &.active {
+    border-image: url('./buttons/standard-common-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+  }
+}
+
+
+.tab-common-button {
+  flex-grow: 1;
+  min-height: 46px;
+  background-color: transparent;
+  padding: 0 8px;
+}
+
+.tab-common-container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 24px;
+
+  .tab-common-button {
+    border-image: url('./buttons/standard-common-middle-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+    &.active {
+      border-image: url('./buttons/standard-common-middle-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+    }
+
+    &:first-child {
+      border-image: url('./buttons/standard-common-left-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+      &.active {
+        border-image: url('./buttons/standard-common-left-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+      }
+    }
+
+    &:last-child {
+      border-image: url('./buttons/standard-common-right-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+      &.active {
+        border-image: url('./buttons/standard-common-right-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+      }
+    }
+  }
+}
+
+.tab-common-vertical-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .tab-common-button {
+    border-image: url('./buttons/standard-common-middle-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+    &.active {
+      border-image: url('./buttons/standard-common-middle-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+    }
+
+    &:first-child {
+      border-image: url('./buttons/standard-common-top-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+      &.active {
+        border-image: url('./buttons/standard-common-top-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+      }
+    }
+
+    &:last-child {
+      border-image: url('./buttons/standard-common-bottom-up.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+
+      &.active {
+        border-image: url('./buttons/standard-common-bottom-active.png') 7 7 8 6 fill / 7px 7px 8px 6px;
+      }
+    }
+  }
+}

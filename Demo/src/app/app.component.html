@@ -1,0 +1,18 @@
+<section class="demo">
+  <div class="demo-buttons">
+    <span class="title">You pressed button {{ communicationService.serial[1] }}</span>
+    <div class="button-container">
+      <app-button *ngFor="let i of buttonCount"
+                  [pressJoin]="i + 1"
+                  [feedbackJoin]="i + 1">
+        Button {{ i + 1 }}
+      </app-button>
+    </div>
+  </div>
+  <div class="demo-ramp">
+    <app-button [pressJoin]="11" [feedbackJoin]="11">Ramp Up</app-button>
+    <app-liquid-gauge [min]="0" [max]="65535" [value]="communicationService.analog[1]" fillColor="#FF6347" orientation="vertical"></app-liquid-gauge>
+    <app-liquid-gauge [min]="0" [max]="65535" [value]="communicationService.analog[1]" fillColor="#1E90FF" orientation="horizontal"></app-liquid-gauge>
+    <app-button [pressJoin]="12" [feedbackJoin]="12">Ramp Up</app-button>
+  </div>
+</section>
